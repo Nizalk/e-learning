@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="StyleSheet" href="style.css">
+<link rel="StyleSheet" href="button.css">
+<link rel="StyleSheet" href="cards.css">
+<link rel="StyleSheet" href="imageprofil.css">
+<link rel="calendarSheet" href="stylecalendar.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<a class="haut" href="Calendrier.html" style="text-decoration: none; color : black ;font-weight: bold;" > Calendrier</a>
+
+<a   class="haut"  href="acceuil_eleve.html" style="margin-left:2%;text-decoration: none; color : black ;font-weight: bold;">Mes Cours</a>
+
+<div class="dropdown">
+  <button class="dropbtn"><b style="margin-left:10px;">A Propos <i class="fas fa-angle-down"></i></b></button>
+<div class="dropdown-content">
+  <a href="http://elearning.um5.ac.ma/">Digitall Learning Center</a>
+  <a href="http://www.um5.ac.ma/um5/" >UM5 </a>
+ </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn"><b style="margin-left:10px;">Aide BlueLink<i class="fas fa-angle-down"></i></b></button>
+<div class="dropdown-content">
+  <a href="#">FAQ</a>
+  <a href="https://moodle-ensias.um5.ac.ma/pluginfile.php/2/course/section/6/guide_etudiant.pdf" >Guide Etudiant </a>
+  <a href="https://moodle-ensias.um5.ac.ma/pluginfile.php/2/course/section/6/guide_enseignant.pdf" >Guide Prof </a>
+ </div>
+</div>
+
+<i class="fas fa-address-card  profil"></i>
+<b style="margin-left:2px">NOM ET PRENOM</b>
+
+<input type="checkbox" id="ham-menu">
+<label for="ham-menu">
+  <div class="hide-des">
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+  </div>
+
+</label>
+
+
+<div class="full-page-green"></div>
+<div class="ham-menu">
+  <ul class="centre-text bold-text">
+    <li><a class="far fa-address-book" style="margin-right:5%; font-weight: bolder;" href="Profil_Prof.html"> PROFIL</a></li>
+    <li><a class="fas fa-book" style="margin-right:7px; font-weight: bolder;" href="acceuil_prof.html"> Mes cours </a> </li>
+    <li><a class="far fa-calendar-alt" style="margin-right:7px; font-weight: bolder;" href="CalendrierProf.html"> Planning</a></li>
+    <li><a class="fas fa-sign-out-alt" style="margin-right:7px; font-weight: bolder; " href="index.html"> Deconnetion</a></li>
+
+  </ul>
+</div>
+
+<style>
+    #calendar {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:8%;
+  }
+  
+  #calendar td, #calendar th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #calendar tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #calendar tr:hover {background-color: #ddd;}
+  
+  #calendar th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+  }
+</style>
+
+</head>
+   
+<body>
+<!--
+    <input type="checkbox" id="ham-menu">
+    <label for="ham-menu">
+      <div class="hide-des">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </div>
+    
+    </label>
+    <div class="full-page-green"></div>
+    <div class="ham-menu">
+      <ul class="centre-text bold-text">
+        <li><i class="far fa-address-book" style="margin-right:7px;"></i>PROFIL</li>
+        <li><i class="fas fa-book" style="margin-right:7px;"></i>Mes cours </li>
+        <li><i class="far fa-calendar-alt" style="margin-right:7px;"></i>Planning</li>
+        <li>Support</li>
+        <li><i class="fas fa-sign-out-alt" style="margin-right:7px;"></i>Deconection</li>
+    
+      </ul>
+    </div>-->
+
+<div class="backprofil">
+    <div class="position">
+    <h1 class="profil"><b>ESPACE PERSONNEL :</b></h1> <br>
+
+</div>
+</div>
+<div class="containe"><b style="font-size:30px;text-align:center;">MON PLANING DE LA SEMAINE :</b>
+    
+</div>
+
+<table id="calendar">
+    <tr>
+      <th>JOUR/HEURE</th>
+      <th>9h00 à 10h40</th>
+      <th>10h50 à 12h30</th>
+      <th>14h00 à 15h40</th>
+      <th>16h10 à 17h50</th>
+    </tr>
+    <tr>
+      <td><b>LUNDI</b></td>
+      <td>Seance 1 avec Prof X</td>
+      <td>Seance 2 avec Prof X</td>   
+      <td>Seance 3 avec Prof X</td>
+      <td>Seance 4 avec Prof X</td>
+      
+    </tr>
+
+    <tr>
+        <td><b>MARDI</b></td>
+      <td>Seance 1 avec Prof X</td>
+      <td>Seance 2 avec Prof X</td>   
+      <td>Seance 3 avec Prof X</td>
+      <td>Seance 4 avec Prof X</td>
+      
+    </tr>
+    <tr>
+        <td><b>MERCREDI</b></td>
+      <td>Seance 1 avec Prof X</td>
+      <td>Seance 2 avec Prof X</td>   
+      <td>Seance 3 avec Prof X</td>
+      <td>Seance 4 avec Prof X</td>
+      
+    </tr>
+    <tr>
+        <td><b>JEUDI</b></td>
+      <td>Seance 1 avec Prof X</td>
+      <td>Seance 2 avec Prof X</td>   
+      <td>Seance 3 avec Prof X</td>
+      <td>Seance 4 avec Prof X</td>
+      
+    </tr>
+    <tr>
+        <td><b>VENDREDI</b></td>
+      <td>Seance 1 avec Prof X</td>
+      <td>Seance 2 avec Prof X</td>   
+      <td>Seance 3 avec Prof X</td>
+      <td>Seance 4 avec Prof X</td>
+      
+    </tr>
+    <tr>
+        <td><b>SAMEDI</b></td>
+      <td>Seance 1 avec Prof X</td>
+      <td>Seance 2 avec Prof X</td>   
+      <td>Seance 3 avec Prof X</td>
+      <td>Seance 4 avec Prof X</td>
+      
+    </tr>
+    <tr>
+        <td><b>DIMANCHE</b></td>
+      <td>Seance 1 avec Prof X</td>
+      <td>Seance 2 avec Prof X</td>   
+      <td>Seance 3 avec Prof X</td>
+      <td>Seance 4 avec Prof X</td>
+      
+    </tr>
+  </table>
+
+
+
+
+
+
+
+    <div class="basdepageprofil">
+       <div class="bastexte"> <b>Copyright © 2020 - <i >BLUELINK</i> COMPANY</b></div>
+       <div style="color:white">
+         <i class="far fa-envelope" ></i>  Bluelinkcompany.contact@gmail.com <br><br>
+       <i class="fas fa-globe"></i><a href="www.google.com"> BlueLinkWebsite</a><br><br>
+       <i class="fab fa-linkedin"></i> BLUELINK COMPANY</div>
+    </div>
+
+</body>
+
+</html>

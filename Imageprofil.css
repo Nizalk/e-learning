@@ -1,0 +1,31 @@
+
+
+body{
+    --imageprofil--url: url('Nizarelk.jpg');
+}
+img{content: var( --imageprofil--url);
+width:200px;
+height:250px;}
+
+.headshot {
+	flex-shrink: 0;
+	margin: 20px;
+	height: calc(150px + 6vw);
+	width: calc(150px + 6vw);
+	border: calc(8px + 0.2vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+.headshot-2 {
+	border-radius: 50%;
+	background-image: var(--imageprofil--url), linear-gradient(to bottom right, blue, white, #2b86c5);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
